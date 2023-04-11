@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
         let vidas = 3;
         // Mostrar input para adivinar el numero
         document.getElementById("adivinar").style.display = "";
-        console.log(numeroMagico)
         document.querySelector("#enviar").addEventListener("click", function() {
             // Obtener numero ingresado por el usuario
             let numeroIngresado = document.getElementById("numero").value;
