@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("comenzarJuego").addEventListener("click", function() {
         // Generar numero aleatorio
         let numeroMagico = Math.floor(Math.random() * 100) + 1;
-        let oportunidades = 1;
+        let oportunidades = 5;
         let vidas = 3;
         // Mostrar input para adivinar el numero
         document.getElementById("adivinar").style.display = "";
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 oportunidades--;
                 if (oportunidades == 0) {
                     vidas--;
-                    oportunidades = 1;
+                    oportunidades = 5;
                     document.querySelector("#corazones .corazon:last-child").remove();
                 } else {
                     alert("Número incorrecto. Te quedan " + oportunidades + " oportunidades");
